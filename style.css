@@ -1,15 +1,15 @@
-*{
+*{/*테두리따라 박스크기지정*/
     box-sizing: border-box;
     color: white;
 }
-main{
+main{/*너비*/
     width: 150px;
 }
-input, button{
+input, button{/*높이, 외곽선*/
     height: 35px;
     outline: none;
 }
-input{
+input{/*너비, 텍스트정렬, 선없음, 배경, 안쪽여백, 글자크기 조정*/
     width: 100%;
     text-align: right;
     border: none;
@@ -17,7 +17,7 @@ input{
     padding-right: 1rem;
     font-size: 2rem;
 }
-button{
+button{/*색상, 선, 폰트크기 조정*/
     background: #828284;
     border: 1px solid #454448;
     font-size: 1rem;
@@ -25,17 +25,17 @@ button{
 button:nth-child(4n+2), button:last-child{
     background-color: orange;
 }
-button:hover{
+button:hover{/*투명도*/
     opacity: .5;
 }
 .button-wrap{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);/*1fr 1fr 1fr 1fr로 크기지정*/
 }
-.ac{
+.ac{/*선 4개, 3칸 합치기*/
     grid-column: 1/4;
     background: #6A6A6C;
 }
-.zero{
+.zero{/*선 3개, 2칸 합치기*/
     grid-column: 1/3;
 }
